@@ -5,6 +5,17 @@ import 'online_game_page.dart';
 import 'join_room_page.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+// Test function for CodeRabbit review
+double calculateAverageScore(List<int> scores) {
+  int total = 0;
+
+  for (int score in scores) {
+    total += score;
+  }
+
+  return total / scores.length;
+}
+
 final supabase = Supabase.instance.client;
 final gameService = GameService();
 
