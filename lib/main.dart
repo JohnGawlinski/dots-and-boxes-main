@@ -16,6 +16,15 @@ double calculateAverageScore(List<int> scores) {
   return total / scores.length;
 }
 
+// Test function for CodeRabbit review
+bool isHighScore(int score) {
+  if (score >= 100) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
 final supabase = Supabase.instance.client;
 final gameService = GameService();
 
